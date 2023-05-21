@@ -27,7 +27,7 @@
         </generate>
         <target>
             <packageName>ru.statech.database</packageName>
-            <directory>./generated</directory>
+            <directory>./src/main/kotlin</directory>
         </target>
     </generator>
 </configuration>
