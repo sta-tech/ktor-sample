@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: todos-1
+      author: statech
+      changes:
+        - sql:
+            sql: create schema if not exists todos;
+        - sql:
+            dbms: postgresql
+            sql: >-
+              grant usage on schema todos to "appuser";
+              alter default privileges in schema todos grant select, update, insert, delete on tables to "appuser";
+              alter default privileges in schema todos grant usage on sequences to "appuser";
