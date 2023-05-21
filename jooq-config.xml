@@ -5,6 +5,10 @@
             <name>org.jooq.meta.extensions.liquibase.LiquibaseDatabase</name>
             <properties>
                 <property>
+                    <key>rootPath</key>
+                    <value>./</value>
+                </property>
+                <property>
                     <key>scripts</key>
                     <value>changelog-root.yaml</value>
                 </property>
@@ -21,7 +25,7 @@
         <generate/>
         <target>
             <packageName>ru.statech.database</packageName>
-            <directory>/generated</directory>
+            <directory>./generated</directory>
         </target>
     </generator>
 </configuration>
