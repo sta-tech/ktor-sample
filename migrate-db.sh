@@ -1,2 +1,2 @@
 #!/bin/sh
- liquibase update
+liquibase update

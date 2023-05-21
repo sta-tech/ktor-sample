@@ -1,0 +1,27 @@
+<configuration>
+    <generator>
+        <name>org.jooq.codegen.KotlinGenerator</name>
+        <database>
+            <name>org.jooq.meta.extensions.liquibase.LiquibaseDatabase</name>
+            <properties>
+                <property>
+                    <key>scripts</key>
+                    <value>changelog-root.yaml</value>
+                </property>
+                <property>
+                    <key>includeLiquibaseTables</key>
+                    <value>false</value>
+                </property>
+                <property>
+                    <key>changeLogParameters.contexts</key>
+                    <value>!test</value>
+                </property>
+            </properties>
+        </database>
+        <generate/>
+        <target>
+            <packageName>ru.statech.database</packageName>
+            <directory>/generated</directory>
+        </target>
+    </generator>
+</configuration>
