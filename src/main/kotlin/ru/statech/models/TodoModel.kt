@@ -7,7 +7,7 @@ import java.time.Instant
 import java.util.UUID
 
 @Serializable
-data class Todo(
+data class TodoModel(
     @Serializable(with = UUIDSerializer::class)
     val id: UUID,
     val title: String,
