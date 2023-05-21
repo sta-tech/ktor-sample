@@ -22,7 +22,9 @@
                 </property>
             </properties>
         </database>
-        <generate/>
+        <generate>
+            <pojos>true</pojos>
+        </generate>
         <target>
             <packageName>ru.statech.database</packageName>
             <directory>./generated</directory>
